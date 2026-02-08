@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="hemp0x - A fair-launch proof-of-work blockchain. No premine. No presale. Launched at block 0." />
+    <meta name="theme-color" content="#1a1a1a" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>hemp0x - Fair-launch PoW blockchain</title>
+
+    <meta property="og:title" content="hemp0x - Fair-launch PoW blockchain" />
+    <meta property="og:description" content="A fair-launch proof-of-work blockchain. No premine. No presale. Launched at block 0." />
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1977867131455721472/710d3iPB_400x400.jpg" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="hemp0x - Fair-launch PoW blockchain" />
+    <meta name="twitter:description" content="A fair-launch proof-of-work blockchain. No premine. No presale. Launched at block 0." />
+    <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/1977867131455721472/710d3iPB_400x400.jpg" />
+</head>
+  <body>
+    <div class="container">
+      <header id="top">
+        <div class="header-content">
+          <img src="https://pbs.twimg.com/profile_images/1977867131455721472/710d3iPB_400x400.jpg" alt="hemp0x logo" class="logo">
+          <h1>hemp0x</h1>
+        </div>
+        <p class="subtitle">A fair-launch proof-of-work blockchain</p>
+        <nav>
+          <a href="#about">about</a> |
+          <a href="#specs">specs</a> |
+          <a href="#mining">mining</a> |
+          <a href="#wallets">wallets</a> |
+          <a href="#assets">assets</a> |
+          <a href="#links">links</a>
+        </nav>
+      </header>
+
+      <section id="about">
+        <h2>about</h2>
+        <p>
+          hemp0x is a proof-of-work blockchain launched fairly at block 0.
+          There is no premine. There was no presale. No tokens were allocated to
+          founders, VCs, or insiders.
+        </p>
+        <p>
+          Every coin in circulation was mined by independent miners using
+          computational work. The network is decentralized, permissionless, and
+          maintained by its community.
+        </p>
+        <p>
+          hemp0x follows the principles of early cryptocurrency projects:
+          fair distribution, transparent consensus, and resistance to centralized control.
+        </p>
+      </section>
+
+      <section id="specs">
+        <h2>chain specs</h2>
+        <table>
+          <tr>
+            <td>Consensus</td>
+            <td>Proof-of-Work (KAWPOW)</td>
+          </tr>
+          <tr>
+            <td>Block Time</td>
+            <td>~5 seconds</td>
+          </tr>
+          <tr>
+            <td>Max Supply</td>
+            <td>420,000,000 HEMP</td>
+          </tr>
+          <tr>
+            <td>Premine</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <td>Presale</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <td>Launch Date</td>
+            <td>Block 0</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="mining">
+        <h2>mining</h2>
+        <p>
+          hemp0x uses the KAWPOW mining algorithm. Mining is open to anyone
+          with GPU hardware and compatible mining software.
+        </p>
+        <p>Example mining commands:</p>
+        <pre>
+# Using nbminer
+./nbminer -a kawpow -o stratum+tcp://pool.example.com:4444 -u YOUR_WALLET_ADDRESS
+
+# Using t-rex
+./t-rex -a kawpow -o stratum+tcp://pool.example.com:4444 -u YOUR_WALLET_ADDRESS
+
+# Solo mining
+./hemp0x-cli setgenerate true 4
+        </pre>
+        <p>
+          Join a mining pool or solo mine directly. Block rewards are distributed
+          to miners according to the emission schedule defined in the protocol.
+        </p>
+      </section>
+
+      <section id="wallets">
+        <h2>wallets</h2>
+        <p>
+          hemp0x provides two wallet implementations:
+        </p>
+        <ul>
+          <li><strong>CLI wallet</strong> - Command-line interface for advanced users and server deployments</li>
+          <li><strong>QT wallet</strong> - Desktop GUI wallet for Windows, Mac, and Linux</li>
+        </ul>
+        <p>
+          Both wallets support full node operation, transaction creation, and
+          asset management. Download from the official GitHub repository.
+        </p>
+      </section>
+
+      <section id="assets">
+        <h2>assets &amp; nfts</h2>
+        <p>
+          hemp0x supports native on-chain assets and NFTs. All asset data is
+          stored directly on the blockchain. No IPFS. No external storage.
+        </p>
+        <p>
+          Create tokens, issue unique assets, and transfer ownership using the
+          built-in asset layer. Asset creation requires burning a small amount
+          of HEMP.
+        </p>
+        <pre>
+# Create an asset
+./hemp0x-cli issue "ASSET_NAME" 1000000
+
+# Transfer asset
+./hemp0x-cli transfer "ASSET_NAME" 100 RECIPIENT_ADDRESS
+
+# Create unique NFT
+./hemp0x-cli issueunique "NFT_NAME" ipfs_hash=false data="on-chain data"
+        </pre>
+      </section>
+
+      <section id="links">
+        <h2>links</h2>
+        <ul class="links-list">
+          <li><a href="https://github.com/hemp0x" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://explorer.hemp0x.com" target="_blank" rel="noopener">Block Explorer</a></li>
+          <li><a href="https://discord.com/invite/Eu4UsYPMGS" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://t.me/hemp0x" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="https://x.com/hemp0x" target="_blank" rel="noopener">X (Twitter)</a></li>
+          <li><a href="https://docs.hemp0x.com" target="_blank" rel="noopener">Documentation</a></li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>
+          <a href="#" id="enable-notifications">Enable network notifications</a>
+        </p>
+        <p class="status-message" id="status-message"></p>
+      </footer>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

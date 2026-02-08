@@ -1,0 +1,17 @@
+{
+  "name": "hemp0x - Fair-launch PoW blockchain",
+  "short_name": "hemp0x",
+  "description": "A fair-launch proof-of-work blockchain with no premine",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#1a1a1a",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
